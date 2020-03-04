@@ -1,10 +1,8 @@
 <template>
   <v-card class="DataView pa-1">
-    <v-toolbar flat class="DataView-content">
+    <v-toolbar flat height="auto" class="DataView-content">
       <div class="DataView-TitleContainer">
-        <v-toolbar-title>
-          {{ title }}
-        </v-toolbar-title>
+        <v-toolbar-title>{{ title }}</v-toolbar-title>
         <slot name="button" />
       </div>
       <v-spacer />
@@ -13,7 +11,7 @@
     <v-card-text class="DataView-CardText">
       <slot />
     </v-card-text>
-    <v-footer class="DataView-Footer"> {{ date }} 更新 </v-footer>
+    <v-footer class="DataView-Footer">{{ date }} 更新</v-footer>
   </v-card>
 </template>
 
